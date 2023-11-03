@@ -7,28 +7,20 @@
 
 body {
   height: 100vh;
-  font-family: Arial, sans-serif;  
+  font-family: Arial, sans-serif;
   text-align: center;
   background: linear-gradient(135deg, #3494e6, #ec6ead);
   background-repeat: no-repeat;
   background-attachment: fixed;
 }
 
-.container {
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh; 
-}
-
-header {  
+header {
   display: flex;
   align-items: center;
   justify-content: space-around;
   background-color: beige;
   padding: 10px;
 }
-
-
 
 nav {
   display: flex;
@@ -59,13 +51,13 @@ a:not(.social-icons):hover {
 }
 
 form {
-  width: 100vh;  
-  max-width: 400px;  
+  width: 100vh;
+  max-width: 30%;
   margin: auto;
   display: flex;
   padding: 10px;
   flex-direction: column;
-  justify-content: center;  
+  justify-content: center;
   background: linear-gradient(to right, #1ea4c8, #5cbbbf);
   border-radius: 10px;
 }
@@ -92,7 +84,7 @@ select {
   font-weight: bold;
 }
 
-.valor-seguro {  
+.valor-seguro {
   color: black;
   padding: 10px;
   border-radius: 5px;
@@ -100,28 +92,27 @@ select {
   text-align: center;
 }
 
-button{
+button {
   padding: 10px;
   border-radius: 5px;
   border: none;
-  /* background-color: #0b720b; */  
+  /* background-color: #0b720b; */
   font-weight: 600;
   cursor: pointer;
 }
 
-button:hover{
-  background-color: #A2C579;
+button:hover {
+  background-color: #a2c579;
 }
 
-
 footer {
-  position:fixed;
+  position: fixed;
   bottom: 0;
   display: flex;
   justify-content: center;
   padding: 0.5rem 0;
   justify-content: space-around;
-  background-color: beige;  
+  background-color: beige;
   width: 100vw;
 }
 
@@ -145,23 +136,21 @@ footer {
   flex: 1;
 }
 
-
 .social-icons {
-    text-align: center; /* Alinea los iconos al centro */
+  text-align: center; /* Alinea los iconos al centro */
 }
 
 /* Estilos para los enlaces de iconos */
 .social-icons a {
-    display: inline-block; /* Muestra los iconos en línea (uno al lado del otro) */
-    margin: 0 2px; /* Espaciado horizontal entre iconos */
+  display: inline-block; /* Muestra los iconos en línea (uno al lado del otro) */
+  margin: 0 2px; /* Espaciado horizontal entre iconos */
 }
 
 /* Estilos para las imágenes de los iconos */
 .social-icons img {
-    width: 24px; /* Tamaño de ancho de los iconos */
-    height: 24px; /* Tamaño de alto de los iconos */
+  width: 24px; /* Tamaño de ancho de los iconos */
+  height: 24px; /* Tamaño de alto de los iconos */
 }
-
 
 .modal {
   display: none;
@@ -170,8 +159,7 @@ footer {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0,0,0,0.7);
-
+  background-color: rgba(0, 0, 0, 0.7);
 }
 
 /* Estilo para el contenido del modal */
@@ -181,7 +169,7 @@ footer {
   padding: 20px;
   border: 1px solid #888;
   width: 30%;
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   text-align: center;
   border-radius: 10px;
 }
@@ -198,3 +186,34 @@ footer {
   cursor: pointer;
 }
 
+@media (max-width: 700px) {
+  .contacto {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  form {
+    width: 100%;
+    max-width: 100%;
+    margin: auto;
+    display: flex;
+    padding: 10px;
+    flex-direction: column;
+    justify-content: center;
+    background: linear-gradient(to right, #1ea4c8, #5cbbbf);
+    border-radius: 10px;
+  }
+
+  .modal-content {
+    background-color: rgb(250, 242, 157);
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 100%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    text-align: center;
+    border-radius: 10px;
+  }
+}
