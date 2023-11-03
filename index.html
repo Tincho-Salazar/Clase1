@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>SNPC</h1>
+        <nav>
+            <a href="#">Inicio</a>
+            <a href="#Servicios">Servicios</a>
+            <a href="#Contacto">Contacto</a>
+        </nav>
+    </header>
+    <section class="contacto" id="Contacto">
+        <form action="#" novalidate>
+            <h2>Solicitud de Seguro</h2>
+            <div class="form-group">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required placeholder="Ingrese su Nombre">
+            </div>
+            <div class="form-group">
+                <label for="apellido">Apellido:</label>
+                <input type="text" id="apellido" name="apellido" required placeholder="Ingrese su Apellido">
+            </div>
+            <div class="form-group">
+                <label for="dni">DNI:(Sin puntos)</label>
+                <input type="text" id="dni" name="dni" required placeholder="Ingrese su DNI">
+            </div>
+            <div class="form-group">
+                <label for="telefono">Teléfono:(Ingrese Solo Numero)</label>
+                <input type="tel" id="telefono" name="telefono" required placeholder="Ingrese su Telefono">
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required placeholder="Ingrese su Email">
+            </div>
+            <div class="form-group">
+                <label for="tipo-seguro">Tipo de seguro:</label>
+                <select id="tipo-seguro" name="tipo-seguro">
+                    <option value="" disabled selected>Seleccione una opción</option>
+                    <option value="basico">Básico</option>
+                    <option value="intermedio">Intermedio</option>
+                    <option value="premium">Premium</option>
+                </select>
+            </div>
+            <br>
+            <div id="valor-seguro">
+                Valor del seguro: <span id="valor">$0</span>
+            </div>
+            <br>
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+    <footer>
+        <div class="footer-content">
+            <div class="copyright">
+                &copy; 2023 SNPC Todos los derechos reservados.
+            </div>
+            <div class="contact-info">
+                <p>Contacto: info@snpc.com</p>
+            </div>
+            <div class="social-links">
+                <a href="https://www.facebook.com" class="social-icons" target="_blank"><img
+                        src="/assets/facebook-48.png" alt="Facebook"></a>
+
+                <a href="https://es.linkedin.com" class="social-icons" target="_blank"><img
+                        src="/assets/linkedin-48.png" alt="LinkedIn"></a>
+                <a href="https://www.instagram.com/" class="social-icons" target="_blank"><img
+                        src="/assets/instagram-48.png" alt="instagram"></a>
+            </div>
+        </div>
+    </footer>
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <span id="closeModal" class="close">&times;</span>
+            <h2>Datos Incompletos</h2><br>
+            <p id="errorMessage"></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+
+</html>

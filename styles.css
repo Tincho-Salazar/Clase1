@@ -1,0 +1,200 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box; /* Agregamos box-sizing para evitar problemas de diseño */
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  height: 100vh;
+  font-family: Arial, sans-serif;  
+  text-align: center;
+  background: linear-gradient(135deg, #3494e6, #ec6ead);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; 
+}
+
+header {  
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: beige;
+  padding: 10px;
+}
+
+
+
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+nav a {
+  color: darkgoldenrod;
+  text-decoration: none;
+  font-weight: 500;
+  transition: 0.5s ease-in-out;
+  padding: 10px 5px;
+  text-align: center;
+  width: 100px;
+}
+
+a:not(.social-icons):hover {
+  border: 1px solid darkgoldenrod;
+  cursor: pointer;
+}
+.contacto {
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+form {
+  width: 100vh;  
+  max-width: 400px;  
+  margin: auto;
+  display: flex;
+  padding: 10px;
+  flex-direction: column;
+  justify-content: center;  
+  background: linear-gradient(to right, #1ea4c8, #5cbbbf);
+  border-radius: 10px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  padding: 2px;
+  margin: 0;
+  border: none;
+  border-radius: 5px;
+}
+
+input,
+select {
+  border-radius: 5px;
+  padding: 8px;
+  border: none;
+  font-size: 16px;
+}
+
+.form-group label {
+  text-align: left;
+  font-weight: bold;
+}
+
+.valor-seguro {  
+  color: black;
+  padding: 10px;
+  border-radius: 5px;
+  font-weight: 600;
+  text-align: center;
+}
+
+button{
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  /* background-color: #0b720b; */  
+  font-weight: 600;
+  cursor: pointer;
+}
+
+button:hover{
+  background-color: #A2C579;
+}
+
+
+footer {
+  position:fixed;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  padding: 0.5rem 0;
+  justify-content: space-around;
+  background-color: beige;  
+  width: 100vw;
+}
+
+.footer-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.copyright {
+  flex: 1;
+}
+
+.contact-info {
+  flex: 1;
+  text-align: center;
+}
+
+.social-links {
+  flex: 1;
+}
+
+
+.social-icons {
+    text-align: center; /* Alinea los iconos al centro */
+}
+
+/* Estilos para los enlaces de iconos */
+.social-icons a {
+    display: inline-block; /* Muestra los iconos en línea (uno al lado del otro) */
+    margin: 0 2px; /* Espaciado horizontal entre iconos */
+}
+
+/* Estilos para las imágenes de los iconos */
+.social-icons img {
+    width: 24px; /* Tamaño de ancho de los iconos */
+    height: 24px; /* Tamaño de alto de los iconos */
+}
+
+
+.modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.7);
+
+}
+
+/* Estilo para el contenido del modal */
+.modal-content {
+  background-color: rgb(250, 242, 157);
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 30%;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  text-align: center;
+  border-radius: 10px;
+}
+
+/* Estilo para el botón de cerrar */
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover {
+  cursor: pointer;
+}
+
